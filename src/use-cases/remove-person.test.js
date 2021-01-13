@@ -19,4 +19,9 @@ describe('use-case - remove-person', () => {
 		const removedPerson = await removePerson(personToAdd);
 		expect(removedPerson).toMatchObject(personToAdd);
 	});
+
+	it('fails to remove a non-existant person', async () => {
+		const removePerson = makeRemovePerson({ peopleDB });
+		await expect(removePerson({ id: 'Invalid ID' })).rejects.toThrow('Person not found');
+	});
 });
