@@ -21,9 +21,9 @@ The running applicaiton will then expose the following APIs:
 None of the above endpoints require any parameters, however a JSON payload should be sent with each request. A sample payload is as follows (note that only the `id` parameter is required for GET and DELETE requests):
 
     {
-    	"id":  "Original ID",
-    	"name":"Original name",
-    	"DOB":"2021-01-01",
+        "id":  "Original ID",
+        "name":"Original name",
+        "DOB":"2021-01-01",
         "phoneNumber":"07777777777",
         "address":"123 Somename Road"
     }
