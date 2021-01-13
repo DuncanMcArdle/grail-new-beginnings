@@ -1,0 +1,13 @@
+{
+	"env": {
+		"node": true,
+		"jest": true
+	},
+	"extends": ["airbnb", "prettier"],
+	"plugins": ["prettier"],
+	"rules": {
+		"prettier/prettier": ["error"],
+		"import/extensions": "off",
+		"no-console": "off"
+	}
+}
